@@ -8,6 +8,7 @@
     "dev": "http-server ."
   },
   "dependencies": {
+    "moment": "^2.23.0",
     "systemjs": "^0.19.22",
     "typescript": "^3.2.2"
   }

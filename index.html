@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>SystemJS</title>
     <script src="node_modules/systemjs/dist/system.js"></script>
     <script src="node_modules/typescript/lib/typescript.js"></script>
     <script>
-      System.config({
-        transpiler: 'typescript',
-        packages: {
-          src: {
-            defaultExtension: 'ts'
-          }
-        } 
-      });
-      System
-        .import('src/main')
-        .then(null, console.error.bind(console));
+        System.config({
+            transpiler: 'typescript',
+            map: {
+                'moment': 'node_modules/moment/src'
+            },
+            packages: {
+                src: {
+                    defaultExtension: 'ts'
+                },
+                'moment': {
+                    main: 'moment.js'
+                }
+            }
+        });
+        System
+            .import('src/main')
+            .then(null, console.error.bind(console));
     </script>
-  </head>
-  <body>
-  </body>
+</head>
+
+<body>
+</body>
+
 </html>
