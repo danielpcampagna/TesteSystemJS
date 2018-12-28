@@ -1,0 +1,14 @@
+{
+  "name": "teste02",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "author": "Daniel",
+  "license": "MIT",
+  "scripts": {
+    "dev": "http-server ."
+  },
+  "dependencies": {
+    "systemjs": "^0.19.22",
+    "typescript": "^3.2.2"
+  }
+}
